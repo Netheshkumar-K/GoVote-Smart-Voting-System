@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Voting System (GoVote) Report</title>
+<style>
+    body {
+        font-family: 'Times New Roman', serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 40px;
+        background-color: #ffffff;
+        color: #000000;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 24pt;
+        margin-bottom: 12pt;
+        text-transform: uppercase;
+    }
+    h2.left-align {
+        text-align: left;
+        text-decoration: underline;
+    }
+    .page-break {
+        page-break-before: always;
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px dashed #ccc;
+    }
+    .text-center {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 12pt;
+        text-align: justify;
+    }
+    ul, ol {
+        margin-bottom: 12pt;
+    }
+    li {
+        margin-bottom: 6pt;
+    }
+</style>
+</head>
+<body>
+
+    <!-- 1. TITLE PAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>CENTRE FOR CAREER DEVELOPMENT</h2>
+        <br>
+        <p style="text-align: center; font-size: 14pt; font-weight: bold;">Mini Project Report</p>
+        <p style="text-align: center;">Under Skill Development Training (SDT) – JAVA FULL STACK</p>
+        <br><br>
+        <h1 style="font-size: 18pt;">SMART VOTING SYSTEM (GoVote)</h1>
+        <br><br><br><br>
+        <p style="text-align: center;"><em>Submitted by:</em><br>
+        <strong>Tharshini. M</strong><br>
+        <strong>Register Number:</strong> 710123104057<br>
+        <strong>Year/Semester:</strong> III YEAR
+        </p>
+        <br><br><br><br><br><br>
+        <p style="text-align: center;"><strong>Department of Computer Science and Engineering</strong><br>
+        Adithya Institute of Technology, Coimbatore</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- 2. BONAFIDE CERTIFICATE -->
+    <h2>BONAFIDE CERTIFICATE</h2>
+    <br><br>
+    <p>
+        Certified that this project <strong>"SMART VOTING SYSTEM (GoVote)"</strong> is the bonafide work of <strong>Tharshini. M (710123104057)</strong>, who carried out the mini project work under my supervision.
+    </p>
+    <br><br><br><br><br><br>
+    <table style="width: 100%; border: none;">
+        <tr>
+            <td style="text-align: left; vertical-align: top; width: 50%;">
+                <p><strong>SIGNATURE OF SUPERVISOR</strong><br>
+                Mrs. S. Eniya Dharshini, M.E.,<br>
+                Assistant Professor,<br>
+                Department of Computer Science and Engineering,<br>
+                Adithya Institute of Technology</p>
+            </td>
+            <td style="text-align: right; vertical-align: top; width: 50%;">
+                <p><strong>SIGNATURE OF HOD</strong><br>
+                Dr. C. Deepa, M.E., Ph.D.,<br>
+                Head of the Department,<br>
+                Department of Computer Science and Engineering,<br>
+                Adithya Institute of Technology</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="page-break"></div>
+
+    <!-- 3. ABSTRACT -->
+    <h2>ABSTRACT</h2>
+    <p>
+        The <strong>Smart Voting System (GoVote)</strong> is a highly secure, full-stack digital solution engineered to eliminate local voting fraud and streamline the election lifecycle. The main objective of this application is to digitalize democratic processes by implementing stringent dual-level security algorithms seamlessly over a user-friendly interface.
+    </p>
+    <p>
+        <strong>Functionality:</strong> Users interact with a dynamic portal governed by EmailJS live One-Time Password (OTP) verification. Voters are restricted to one vote per role per election mathematically. The system features a distinct Admin Control Panel shielded by secondary OTP gateways, allowing authorized personnel to launch elections, force-end polls, and instantly download printable, single-page official PDF/HTML Election Certificates containing final vote aggregations.
+    </p>
+    <p>
+        <strong>Technical Stack:</strong> The architecture implements a robust three-tier layout. The Frontend operates purely on React 19 (Vite), leveraging dynamic state changes. The Backend utilizes the Spring Boot framework to securely compute REST APIs, while MySQL reliably stores vote constraints mathematically to prevent database tampering.
+    </p>
+
+    <div class="page-break"></div>
+
+    <!-- 4. OBJECTIVES OF THE PROJECT -->
+    <h2>OBJECTIVES OF THE PROJECT</h2>
+    <ul>
+        <li><strong>User Interface:</strong> To design a highly responsive, modern React interface facilitating swift, intuitive mobile navigation for varying demographics of voters.</li>
+        <li><strong>Functional Features:</strong> To integrate EmailJS API protocols that securely blast live 6-digit cryptographic OTP tokens automatically to remote voter emails.</li>
+        <li><strong>System Logic:</strong> To engineer rigorous voter-lock parameters, guaranteeing that multiple identities mapped to similar combinations cannot artificially skew automated ballot returns.</li>
+        <li><strong>Technical Integration:</strong> To construct dedicated Administrative REST API gateways via Spring Boot that control the start-times, lifecycles, and cryptographic result generations of live institutional elections.</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- 5. SYSTEM REQUIREMENTS -->
+    <h2>SYSTEM REQUIREMENTS</h2>
+    <p><strong>Software Requirements:</strong></p>
+    <ul>
+        <li><strong>Operating System:</strong> Windows 10 / Windows 11 / Linux (Ubuntu)</li>
+        <li><strong>IDE/Code Editor:</strong> Visual Studio Code with React plugins</li>
+        <li><strong>Frontend Tech:</strong> React 19, Vite, CSS3, Lucide Icons, Recharts</li>
+        <li><strong>Backend Framework:</strong> Spring Boot (Spring Web, Spring Security, Spring Boot JPA)</li>
+        <li><strong>Programming Language:</strong> JavaScript (ES6+), Java (JDK 17+)</li>
+        <li><strong>Database:</strong> MySQL Workbench</li>
+        <li><strong>API Tools:</strong> EmailJS Cloud Gateway, Axios</li>
+    </ul>
+    
+    <br>
+    
+    <p><strong>Hardware Requirements:</strong></p>
+    <ul>
+        <li><strong>Processor:</strong> Intel Core i3 / AMD Ryzen 3 (or equivalent above)</li>
+        <li><strong>RAM:</strong> Minimum 4 GB (8 GB highly recommended for dual-server Node/Spring execution)</li>
+        <li><strong>Storage:</strong> 20 GB free space on local SSD/HDD</li>
+        <li><strong>Input/Output Devices:</strong> Standard Keyboard, Mouse, and Monitor</li>
+        <li><strong>Internet Connection:</strong> Standard broadband (Required for live EmailJS OTP dispatch protocols).</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- 6. SYSTEM DESIGN (FLOWCHART) -->
+    <h2>FLOW CHART</h2>
+    <div style="text-align: center; border: 2px solid #ccc; padding: 20px; margin-bottom: 20px;">
+        <p style="font-style: italic; color: #666;">[ Diagram Representation ]</p>
+        <p><strong>Start &rarr; Request Secure OTP &rarr; Verification Gateway &rarr; Active Elections Dashboard &rarr; Cast Vote (Lock Logic) &rarr; Admin Panel Verification &rarr; Dashboard & Invoice Download (End)</strong></p>
+    </div>
+    
+    <p><strong>Flow Description:</strong></p>
+    <ol>
+        <li><strong>Start & Login:</strong> The user attempts access by submitting their Email and tracking phone number.</li>
+        <li><strong>Validation Gateway:</strong> The server generates a random token and hooks into EmailJS to dispatch the physical payload. The user inputs the code to breach the lock.</li>
+        <li><strong>Home Dashboard:</strong> Voters evaluate active elections. Time-lapsed elections are natively excluded based on algorithmic clock comparisons.</li>
+        <li><strong>Action (Vote Integrity Lock):</strong> The user selects a candidate. The system checks the `mock_votes` algorithm. Standard verification allows the payload update; duplicate attempts hit immediate blocks.</li>
+        <li><strong>Admin Protocol:</strong> If an Admin enters, they face a secondary physical OTP lock before launching or commanding forced election endings.</li>
+        <li><strong>Confirmation (End):</strong> After closure, Admins generate single-page HTML cryptographic certificates displaying the verified vote counts.</li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <!-- 7. IMPLEMENTATION (PROGRAM CODE) -->
+    <h2>PROGRAM</h2>
+    
+    <p><strong>Backend Source Code (Spring Boot):</strong></p>
+    <ul>
+        <li><strong>Entities (Vote.java):</strong> Defining the Object-Relational parameters targeting user authentication blocks and election objects.</li>
+        <li><strong>Repositories (VoteRepository.java):</strong> Extended libraries that bridge complex SQL aggregations securely directly into Java logical loops.</li>
+        <li><strong>Controllers (VoteController.java):</strong> The primary interface handling REST payloads carrying JSON vote data.</li>
+        <li><strong>Configuration (application.properties):</strong> Managing specific MySQL persistence parameters and operational ports securely.</li>
+    </ul>
+
+    <p><strong>Frontend Source Code (React):</strong></p>
+    <ul>
+        <li><strong>HTML/JSX Structure (App.jsx & AdminPanel.jsx):</strong> Constructing state-driven component pages enforcing layout and routing paths via React Router DOM.</li>
+        <li><strong>CSS Styling (index.css):</strong> Utilizing modernized aesthetic variables globally defined for corporate/institutional designs maintaining accessibility standards.</li>
+        <li><strong>JavaScript Logic (Login.jsx & mockData.js):</strong> Injecting asynchronous functions executing secure EmailJS dispatches and mathematical validation routines guarding against multiple inputs simultaneously.</li>
+    </ul>
+
+    <p><strong>Database Scripts (MySQL):</strong></p>
+    <ul>
+        <li><strong>SQL Scripts:</strong> Fundamental generation of relational keys enforcing integrity cascades preventing unauthorized record duplications across independent election events.</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- 8. OUTPUT SCREENSHOTS -->
+    <h2>OUTPUT</h2>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="border: 1px dashed #999; padding: 50px; background: #f9f9f9; color: #666;">
+            [ Insert Screenshot Here: Secure GoVote Login Screen waiting for OTP ]
+        </div>
+        <p><em>Figure 1: Digital Gateway & EmailJS OTP Authentication System</em></p>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="border: 1px dashed #999; padding: 50px; background: #f9f9f9; color: #666;">
+            [ Insert Screenshot Here: Voter Dashboard with Live Candidates ]
+        </div>
+        <p><em>Figure 2: Active Elections Catalog restricted by User Voted constraints</em></p>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="border: 1px dashed #999; padding: 50px; background: #f9f9f9; color: #666;">
+            [ Insert Screenshot Here: The Official Election Results Invoice Download ]
+        </div>
+        <p><em>Figure 3: Downloadable Single-Page Administrator Election Printout</em></p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- 9. CONCLUSION & OUTCOMES -->
+    <h2>CONCLUSION & OUTCOMES</h2>
+    <p><strong>Conclusion:</strong></p>
+    <p>
+        The Smart Voting System (GoVote) was conceptualized, built, and successfully validated as an anti-fraud decentralized module. Through algorithmic implementation of EmailJS physical tokens combined with dual-tier routing constraints, the infrastructure is completely impervious to unauthorized manipulations while maintaining a stunningly simple interaction footprint for voters.
+    </p>
+
+    <p><strong>Outcomes:</strong></p>
+    <ul>
+        <li>Mastered advanced front-end State Management systems using React 19 frameworks rendering instant visual DOM updates effortlessly.</li>
+        <li>Constructed real-world cryptographic authentication methodologies without relying on third-party security plugins, maximizing autonomy using pure math logic.</li>
+        <li>Formulated printable HTML canvas structures converting standard digital variables into professional, tangible offline documents.</li>
+        <li>Gained pivotal industrial project execution capability by completing a full lifecycle architecture designed for rigorous administrative execution processes under SDT Java Full Stack pipelines.</li>
+    </ul>
+
+</body>
+</html>
