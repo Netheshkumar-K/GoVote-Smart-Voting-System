@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Food Ordering System Report</title>
+<style>
+    body {
+        font-family: 'Times New Roman', serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 40px;
+        background-color: #ffffff;
+        color: #000000;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 24pt;
+        margin-bottom: 12pt;
+        text-transform: uppercase;
+    }
+    h2.left-align {
+        text-align: left;
+        text-decoration: underline;
+    }
+    .page-break {
+        page-break-before: always;
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px dashed #ccc;
+    }
+    .text-center {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 12pt;
+        text-align: justify;
+    }
+    ul, ol {
+        margin-bottom: 12pt;
+    }
+    li {
+        margin-bottom: 6pt;
+    }
+</style>
+</head>
+<body>
+
+    <!-- 1. TITLE PAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>CENTRE FOR CAREER DEVELOPMENT</h2>
+        <br>
+        <p style="text-align: center; font-size: 14pt; font-weight: bold;">Mini Project Report</p>
+        <p style="text-align: center;">Under Skill Development Training (SDT) – JAVA FULL STACK</p>
+        <br><br>
+        <h1 style="font-size: 18pt;">ONLINE FOOD ORDERING SYSTEM</h1>
+        <br><br><br><br>
+        <p style="text-align: center;"><em>Submitted by:</em><br>
+        <strong>Tharshini. M</strong><br>
+        <strong>Register Number:</strong> 710123104057<br>
+        <strong>Year/Semester:</strong> III YEAR
+        </p>
+        <br><br><br><br><br><br>
+        <p style="text-align: center;"><strong>Department of Computer Science and Engineering</strong><br>
+        Adithya Institute of Technology, Coimbatore</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- 2. BONAFIDE CERTIFICATE -->
+    <h2>BONAFIDE CERTIFICATE</h2>
+    <br><br>
+    <p>
+        Certified that this project <strong>"ONLINE FOOD ORDERING SYSTEM"</strong> is the bonafide work of <strong>Tharshini. M (710123104057)</strong>, who carried out the mini project work under my supervision.
+    </p>
+    <br><br><br><br><br><br>
+    <table style="width: 100%; border: none;">
+        <tr>
+            <td style="text-align: left; vertical-align: top; width: 50%;">
+                <p><strong>SIGNATURE OF SUPERVISOR</strong><br>
+                Mrs. S. Eniya Dharshini, M.E.,<br>
+                Assistant Professor,<br>
+                Department of Computer Science and Engineering,<br>
+                Adithya Institute of Technology</p>
+            </td>
+            <td style="text-align: right; vertical-align: top; width: 50%;">
+                <p><strong>SIGNATURE OF HOD</strong><br>
+                Dr. C. Deepa, M.E., Ph.D.,<br>
+                Head of the Department,<br>
+                Department of Computer Science and Engineering,<br>
+                Adithya Institute of Technology</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="page-break"></div>
+
+    <!-- 3. ABSTRACT -->
+    <h2>ABSTRACT</h2>
+    <p>
+        The <strong>Online Food Ordering System</strong> is a full-stack digital solution designed to modernize the traditional restaurant and cafeteria catalog process. The main objective of this application is to bridge the gap between consumers and food providers by offering a highly efficient, remote digital interface capable of handling hundreds of concurrent orders seamlessly.
+    </p>
+    <p>
+        <strong>Functionality:</strong> Users interact with a dynamic, mobile-style interface allowing them to intuitively browse categorized food menus, review pricing, update quantities in a digital cart, and securely check out. The system features immediate validation, reducing wait times and manual operational errors.
+    </p>
+    <p>
+        <strong>Technical Stack:</strong> The architecture strictly implements a modular three-tier layout. The Frontend operates purely on HTML5, CSS3, and JavaScript logic. The Backend is deeply powered by the robust Spring Boot library managing REST APIs, and the Database persists all user and inventory states reliably using MySQL.
+    </p>
+
+    <div class="page-break"></div>
+
+    <!-- 4. OBJECTIVES OF THE PROJECT -->
+    <h2>OBJECTIVES OF THE PROJECT</h2>
+    <ul>
+        <li><strong>User Interface:</strong> To design a simple, intuitive, and responsive mobile-style interface facilitating swift navigation across food categories without page reloads.</li>
+        <li><strong>Functional Features:</strong> To integrate dynamic browsing features such as real-time filtering, keyword search tools, and immediate cart cost calculations.</li>
+        <li><strong>System Logic:</strong> To engineer a rigorous order management system that tracks cart variables, intercepts duplicate order anomalies, and ensures data integrity before official checkout confirmation.</li>
+        <li><strong>Technical Integration:</strong> To construct secure REST API corridors using Spring Boot controllers that seamlessly exchange massive JSON payloads between the client interface and the remote MySQL persistence layer.</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- 5. SYSTEM REQUIREMENTS -->
+    <h2>SYSTEM REQUIREMENTS</h2>
+    <p><strong>Software Requirements:</strong></p>
+    <ul>
+        <li><strong>Operating System:</strong> Windows 10 / Windows 11 / Linux (Ubuntu)</li>
+        <li><strong>IDE/Code Editor:</strong> Visual Studio Code or Eclipse IDE</li>
+        <li><strong>Frontend Tech:</strong> HTML5, CSS3, JavaScript (ES6)</li>
+        <li><strong>Backend Framework:</strong> Spring Boot (Spring Web, Spring Data JPA)</li>
+        <li><strong>Programming Language:</strong> Java (JDK 17+)</li>
+        <li><strong>Database:</strong> MySQL Workbench</li>
+        <li><strong>API Tools:</strong> Postman (for endpoint testing), Maven Build Tool</li>
+    </ul>
+    
+    <br>
+    
+    <p><strong>Hardware Requirements:</strong></p>
+    <ul>
+        <li><strong>Processor:</strong> Intel Core i3 / AMD Ryzen 3 (or equivalent above)</li>
+        <li><strong>RAM:</strong> Minimum 4 GB (8 GB highly recommended for IDE and Spring Boot stability)</li>
+        <li><strong>Storage:</strong> 20 GB free space on local SSD/HDD</li>
+        <li><strong>Input/Output Devices:</strong> Standard Keyboard, Mouse, and Monitor</li>
+        <li><strong>Internet Connection:</strong> Standard broadband for Maven dependencies and documentation.</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- 6. SYSTEM DESIGN (FLOWCHART) -->
+    <h2>FLOW CHART</h2>
+    <div style="text-align: center; border: 2px solid #ccc; padding: 20px; margin-bottom: 20px;">
+        <p style="font-style: italic; color: #666;">[ Diagram Representation ]</p>
+        <p><strong>Start &rarr; Login Authorization &rarr; Home Menu Dashboard &rarr; Cart Management &rarr; Order Confirmation &rarr; End</strong></p>
+    </div>
+    
+    <p><strong>Flow Description:</strong></p>
+    <ol>
+        <li><strong>Start & Login:</strong> The user accesses the landing page and inputs authentication credentials.</li>
+        <li><strong>Validation:</strong> The system validates credentials against database tables. Upon success, passage is granted.</li>
+        <li><strong>Home Dashboard:</strong> The user is presented with the dynamically rendered food catalog retrieved via API.</li>
+        <li><strong>Action (Selection & Search):</strong> The user utilizes the search functionality to pinpoint specific foods and adjusts cart quantities.</li>
+        <li><strong>Cart Evaluation:</strong> The system independently calculates the accumulated pricing total and prepares the receipt array.</li>
+        <li><strong>Confirmation (End):</strong> Final checkout occurs, storing the official order in the MySQL database and logging out the user safely.</li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <!-- 7. IMPLEMENTATION (PROGRAM CODE) -->
+    <h2>PROGRAM</h2>
+    
+    <p><strong>Backend Source Code (Spring Boot):</strong></p>
+    <ul>
+        <li><strong>Entities (Food.java):</strong> Defining the `@Entity` parameters mapped precisely to relational tables in the remote database.</li>
+        <li><strong>Repositories (FoodRepository.java):</strong> Extending `JpaRepository` to abstract heavy SQL scripting into clean method calls.</li>
+        <li><strong>Controllers (FoodController.java):</strong> Establishing `@RestController` endpoints mapping network traffic to the core business logic.</li>
+        <li><strong>Configuration (application.properties):</strong> Managing specific MySQL URLs, driver class names, and active port commands.</li>
+    </ul>
+
+    <p><strong>Frontend Source Code:</strong></p>
+    <ul>
+        <li><strong>HTML Structure (index.html):</strong> Creating semantic form elements, login wrappers, and responsive table skeletons.</li>
+        <li><strong>CSS Styling (style.css):</strong> Utilizing modernized flex layouts, interactive hover states, and smooth color palettes.</li>
+        <li><strong>JavaScript Logic (script.js):</strong> Injecting fetch algorithms, asynchronous DOM manipulation, and frontend mathematical validations.</li>
+    </ul>
+
+    <p><strong>Database Scripts (MySQL):</strong></p>
+    <ul>
+        <li><strong>SQL Scripts:</strong> Generating necessary user tables via `CREATE TABLE` routines and seeding preliminary food catalog states using explicit `INSERT` operations.</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- 8. OUTPUT SCREENSHOTS -->
+    <h2>OUTPUT</h2>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="border: 1px dashed #999; padding: 50px; background: #f9f9f9; color: #666;">
+            [ Insert Screenshot Here: Login Screen ]
+        </div>
+        <p><em>Figure 1: Digital Login and Authentication Gateway</em></p>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="border: 1px dashed #999; padding: 50px; background: #f9f9f9; color: #666;">
+            [ Insert Screenshot Here: Home Dashboard / Catalog ]
+        </div>
+        <p><em>Figure 2: Dynamic Food Catalog Display</em></p>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="border: 1px dashed #999; padding: 50px; background: #f9f9f9; color: #666;">
+            [ Insert Screenshot Here: Cart & Checkout Result ]
+        </div>
+        <p><em>Figure 3: Final Cart Validation and Success Order Message</em></p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- 9. CONCLUSION & OUTCOMES -->
+    <h2>CONCLUSION & OUTCOMES</h2>
+    <p><strong>Conclusion:</strong></p>
+    <p>
+        The Online Food Ordering System was assembled, tested, and actively executed successfully. By stringently implementing clean separation between the frontend interface, backend business structures, and database persistence, the architecture ensures absolute computational modularity. This foundational success provides immense potential for critical future enhancements, including dedicated payment gateways, push notifications, and global GPS tracking systems.
+    </p>
+
+    <p><strong>Outcomes:</strong></p>
+    <ul>
+        <li>Mastery of bridging independent Frontend technologies (HTML/CSS/JS) to native Backend services.</li>
+        <li>Deepened architectural understanding of Spring Boot controllers and standardized JSON REST API communications.</li>
+        <li>Substantial problem-solving logic regarding persistent MySQL database linkage and Hibernate ORM translation protocols.</li>
+        <li>Practical industrial exposure executing a full-length, end-to-end SDT mini-project systematically from layout to launch.</li>
+    </ul>
+
+</body>
+</html>
